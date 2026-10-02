@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/goal_dot"
+        android:layout_width="@dimen/goal_dot"
+        android:layout_height="@dimen/goal_dot"
+        android:background="@drawable/bg_dot"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/goal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_xxs"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.App.Caption"
+        android:textColor="@color/cream_50"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/goal_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_xxs"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/ink_faint"
+        android:textSize="13sp" />
+
+</merge>

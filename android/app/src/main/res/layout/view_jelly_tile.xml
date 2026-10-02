@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/tile_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_tile_clay"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/tile_sprite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:padding="@dimen/tile_sprite_pad"
+        android:scaleType="fitCenter" />
+
+    <View
+        android:id="@+id/tile_gloss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/overlay_tile_gloss"
+        android:importantForAccessibility="no" />
+
+</merge>

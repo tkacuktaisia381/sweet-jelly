@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/board_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/board_fill"
+        app:cardCornerRadius="@dimen/card_radius_md"
+        app:cardElevation="14dp"
+        app:contentPadding="@dimen/board_frame"
+        app:strokeColor="@color/board_stroke_c"
+        app:strokeWidth="@dimen/board_stroke">
+
+        <GridLayout
+            android:id="@+id/board_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="6"
+            android:rowCount="6" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/board_flower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.9"
+        android:contentDescription="@string/cd_flower"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_jelly_flower" />
+
+</merge>

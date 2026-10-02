@@ -1,0 +1,64 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon, one single glossy 3D translucent pink jelly gem cube with soft rounded corners, centered, cream radial gradient background, high contrast, crisp studio lighting, no text"
+    },
+    {
+      "name": "bg_splash",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game loader background, deep grape purple candy workshop, soft bokeh sugar dust, cinematic dark, no text, no UI elements"
+    },
+    {
+      "name": "bg_menu",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game menu background, bright candy jelly stained glass window, pink lemon mint blueberry panes, cream light, vibrant 3D render, no text, no UI elements"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, soft blurred deep purple jelly texture, low contrast for UI overlay, subtle sugar glitter, no text, no UI elements"
+    },
+    {
+      "name": "sprite_window_frame",
+      "type": "sprite",
+      "prompt": "One single ornate round candy stained glass window frame, glossy 3D render, empty centre, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_jelly_flower",
+      "type": "sprite",
+      "prompt": "One single cute glossy 3D sugar flower with four rounded petals, pastel pink lemon mint blue petals, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_gem_pink",
+      "type": "sprite",
+      "prompt": "One single glossy 3D translucent pink jelly gem cube, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_gem_yellow",
+      "type": "sprite",
+      "prompt": "One single glossy 3D translucent lemon yellow jelly gem cube, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_gem_mint",
+      "type": "sprite",
+      "prompt": "One single glossy 3D translucent mint green jelly gem cube, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_gem_blue",
+      "type": "sprite",
+      "prompt": "One single glossy 3D translucent blueberry blue jelly gem cube, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_gem_grape",
+      "type": "sprite",
+      "prompt": "One single glossy 3D translucent grape purple jelly gem cube, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_star",
+      "type": "sprite",
+      "prompt": "One single glossy 3D golden candy star, rounded soft edges, centered icon, isolated on plain white, no other objects"
+    }
+  ]
+}

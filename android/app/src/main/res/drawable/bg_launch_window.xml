@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_splash_gradient" />
+    <item
+        android:width="@dimen/splash_frame"
+        android:height="@dimen/splash_frame"
+        android:drawable="@drawable/sprite_window_frame"
+        android:gravity="center" />
+    <item
+        android:width="@dimen/splash_flower"
+        android:height="@dimen/splash_flower"
+        android:drawable="@drawable/sprite_jelly_flower"
+        android:gravity="center" />
+</layer-list>

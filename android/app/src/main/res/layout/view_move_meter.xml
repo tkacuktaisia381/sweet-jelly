@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/meter_compact_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/jelly_lemon"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/meter_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/meter_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/game_moves_label"
+            android:textAppearance="@style/TextAppearance.App.Label"
+            android:textColor="@color/ink_muted" />
+
+        <TextView
+            android:id="@+id/meter_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.App.Numeral"
+            android:textColor="@color/grape_500" />
+
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/meter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xs"
+        android:max="100"
+        app:indicatorColor="@color/jelly_pink"
+        app:trackColor="@color/meter_track"
+        app:trackCornerRadius="5dp"
+        app:trackThickness="@dimen/meter_track_h" />
+
+</merge>

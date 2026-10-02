@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <ImageView
+        android:id="@+id/img_splash_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.55"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/splash_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlay_splash_scrim"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_blob_pink"
+        android:layout_width="@dimen/blob_lg"
+        android:layout_height="@dimen/blob_lg"
+        android:alpha="0.16"
+        android:importantForAccessibility="no"
+        android:src="@drawable/blob_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_blob_mint"
+        android:layout_width="@dimen/blob_md"
+        android:layout_height="@dimen/blob_md"
+        android:alpha="0.14"
+        android:importantForAccessibility="no"
+        android:src="@drawable/blob_mint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <ImageView
+        android:id="@+id/img_frame"
+        android:layout_width="@dimen/splash_frame"
+        android:layout_height="@dimen/splash_frame"
+        android:contentDescription="@string/cd_window"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_window_frame"
+        app:layout_constraintBottom_toTopOf="@+id/txt_splash_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/img_flower"
+        android:layout_width="@dimen/splash_flower"
+        android:layout_height="@dimen/splash_flower"
+        android:contentDescription="@string/cd_flower"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_jelly_flower"
+        app:layout_constraintBottom_toBottomOf="@+id/img_frame"
+        app:layout_constraintEnd_toEndOf="@+id/img_frame"
+        app:layout_constraintStart_toStartOf="@+id/img_frame"
+        app:layout_constraintTop_toTopOf="@+id/img_frame" />
+
+    <ImageView
+        android:id="@+id/gem_pink"
+        android:layout_width="@dimen/splash_gem"
+        android:layout_height="@dimen/splash_gem"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_gem_pink"
+        app:layout_constraintCircle="@+id/img_frame"
+        app:layout_constraintCircleAngle="315"
+        app:layout_constraintCircleRadius="@dimen/splash_gem_radius" />
+
+    <ImageView
+        android:id="@+id/gem_lemon"
+        android:layout_width="@dimen/splash_gem"
+        android:layout_height="@dimen/splash_gem"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_gem_yellow"
+        app:layout_constraintCircle="@+id/img_frame"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="@dimen/splash_gem_radius" />
+
+    <ImageView
+        android:id="@+id/gem_mint"
+        android:layout_width="@dimen/splash_gem"
+        android:layout_height="@dimen/splash_gem"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_gem_mint"
+        app:layout_constraintCircle="@+id/img_frame"
+        app:layout_constraintCircleAngle="225"
+        app:layout_constraintCircleRadius="@dimen/splash_gem_radius" />
+
+    <ImageView
+        android:id="@+id/gem_berry"
+        android:layout_width="@dimen/splash_gem"
+        android:layout_height="@dimen/splash_gem"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_gem_blue"
+        app:layout_constraintCircle="@+id/img_frame"
+        app:layout_constraintCircleAngle="135"
+        app:layout_constraintCircleRadius="@dimen/splash_gem_radius" />
+
+    <TextView
+        android:id="@+id/txt_splash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xl"
+        android:shadowColor="#80F7A9C4"
+        android:shadowDy="4"
+        android:shadowRadius="18"
+        android:text="@string/splash_title"
+        android:textAppearance="@style/TextAppearance.App.Hero"
+        android:textColor="@color/cream_50"
+        app:layout_constraintBottom_toTopOf="@+id/txt_splash_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_frame" />
+
+    <TextView
+        android:id="@+id/txt_splash_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        android:letterSpacing="0.22"
+        android:text="@string/splash_subtitle"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/jelly_pink"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_splash_title" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/splash_progress"
+        android:layout_width="@dimen/splash_bar_w"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_md"
+        android:indeterminate="true"
+        app:indicatorColor="@color/jelly_lemon"
+        app:layout_constraintBottom_toTopOf="@+id/txt_loading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:trackColor="@color/splash_track"
+        app:trackCornerRadius="3dp"
+        app:trackThickness="6dp" />
+
+    <TextView
+        android:id="@+id/txt_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:letterSpacing="0.30"
+        android:text="@string/splash_loading"
+        android:textAppearance="@style/TextAppearance.App.Caption"
+        android:textColor="@color/lilac_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

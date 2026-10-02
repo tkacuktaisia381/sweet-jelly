@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sweet Jelly</string>
+
+    <string name="splash_title">SWEET JELLY</string>
+    <string name="splash_subtitle">MELT THE WINDOW BACK TOGETHER</string>
+    <string name="splash_loading">LOADING...</string>
+
+    <string name="menu_title">SWEET JELLY</string>
+    <string name="menu_tagline">RESTORE THE JELLY WINDOW</string>
+    <string name="menu_hint">SWAP TWO JELLIES · LINK EVERY COLOUR</string>
+    <string name="menu_cta_play">PLAY</string>
+    <string name="menu_btn_patterns">PATTERNS</string>
+    <string name="menu_btn_tutorial">HOW IT WORKS</string>
+    <string name="menu_btn_settings">SETTINGS</string>
+
+    <string name="stat_label_stars">STARS</string>
+    <string name="stat_label_best">BEST</string>
+    <string name="stat_label_solved">SOLVED</string>
+    <string name="stat_label_next">NEXT</string>
+    <string name="stat_label_status">STATUS</string>
+    <string name="stat_value_new">NEW</string>
+    <string name="stat_value_stars">★ %1$d/%2$d</string>
+
+    <string name="pattern_label">PATTERN %1$02d</string>
+    <string name="pattern_locked">LOCKED</string>
+    <string name="game_level_title">PATTERN %1$02d · %2$s</string>
+    <string name="game_moves_label">MOVES LEFT</string>
+    <string name="game_moves_compact">MOVES %1$02d / %2$02d</string>
+    <string name="game_btn_hint">HINT · %1$d</string>
+    <string name="game_btn_restart">RESET</string>
+
+    <string name="goal_pink">PINK</string>
+    <string name="goal_lemon">LEMON</string>
+    <string name="goal_mint">MINT</string>
+    <string name="goal_berry">BERRY</string>
+    <string name="goal_grape">GRAPE</string>
+    <string name="goal_mark_linked">✓</string>
+    <string name="goal_mark_pending">·</string>
+    <string name="sd_goal_linked">%1$s LINKED</string>
+    <string name="sd_goal_pending">%1$s PENDING</string>
+    <string name="sd_moves">%1$d MOVES LEFT</string>
+    <string name="sd_verdict_win">WINDOW RESTORED</string>
+    <string name="sd_verdict_lose">OUT OF MOVES</string>
+
+    <string name="result_win">WINDOW RESTORED</string>
+    <string name="result_lose">OUT OF MOVES</string>
+    <string name="result_label_score">SCORE</string>
+    <string name="result_label_moves">MOVES LEFT</string>
+    <string name="result_label_linked">LINKED</string>
+    <string name="result_linked_value">%1$d/4</string>
+    <string name="result_btn_next">NEXT PATTERN</string>
+    <string name="result_btn_again">PLAY AGAIN</string>
+    <string name="result_btn_patterns">PATTERNS</string>
+    <string name="result_btn_menu">MENU</string>
+
+    <string name="cd_back">BACK</string>
+    <string name="cd_stars">%1$d OF 3 STARS</string>
+    <string name="cd_flower">SUGAR FLOWER</string>
+    <string name="cd_window">CANDY WINDOW FRAME</string>
+    <string name="cd_source">%1$s SOURCE</string>
+    <string name="cd_tile">ROW %1$d COLUMN %2$d %3$s</string>
+    <string name="cd_star">STAR</string>
+    <string name="state_selected">SELECTED</string>
+    <string name="state_fixed">FIXED</string>
+    <string name="state_linked">LINKED</string>
+    <string name="state_free">FREE</string>
+
+    <string name="dialog_patterns_title">CHOOSE A PATTERN</string>
+    <string name="dialog_close">CLOSE</string>
+    <string name="dialog_tutorial_title">HOW IT WORKS</string>
+    <string name="tutorial_step_1">1</string>
+    <string name="tutorial_step_2">2</string>
+    <string name="tutorial_step_3">3</string>
+    <string name="tutorial_rule_1">TAP A JELLY, THEN TAP A NEIGHBOUR TO SWAP THEM.</string>
+    <string name="tutorial_rule_2">LINK EVERY COLOUR FROM ITS CORNER GEM TO ITS FLOWER PETAL.</string>
+    <string name="tutorial_rule_3">GOLD RIMMED TILES ARE FIXED AND NEVER MOVE.</string>
+    <string name="tutorial_caption">TAP TWO NEIGHBOURS TO SWAP</string>
+    <string name="tutorial_got_it">GOT IT</string>
+    <string name="dialog_settings_title">SETTINGS</string>
+    <string name="settings_sound">SOUND</string>
+    <string name="settings_vibration">VIBRATION</string>
+    <string name="settings_reset">RESET PROGRESS</string>
+    <string name="settings_reset_confirm">TAP AGAIN TO CONFIRM</string>
+
+    <string-array name="level_names">
+        <item>CROSS GLASS</item>
+        <item>PETAL SPIRAL</item>
+        <item>MEADOW GLASS</item>
+        <item>BERRY ZIGZAG</item>
+        <item>CROSS GLASS II</item>
+        <item>PETAL SPIRAL II</item>
+        <item>MEADOW GLASS II</item>
+        <item>BERRY ZIGZAG II</item>
+        <item>CROSS GLASS III</item>
+        <item>PETAL SPIRAL III</item>
+        <item>MEADOW GLASS III</item>
+        <item>BERRY ZIGZAG III</item>
+    </string-array>
+</resources>

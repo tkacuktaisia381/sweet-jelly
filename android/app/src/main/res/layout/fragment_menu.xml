@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_50">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_art_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_sheet_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <ImageView
+        android:id="@+id/img_menu_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/guide_art_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/menu_fade"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlay_menu_fade"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/guide_art_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_menu_blob"
+        android:layout_width="@dimen/blob_sm"
+        android:layout_height="@dimen/blob_sm"
+        android:alpha="0.16"
+        android:importantForAccessibility="no"
+        android:src="@drawable/blob_lemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageView
+        android:id="@+id/img_menu_frame"
+        android:layout_width="@dimen/menu_frame"
+        android:layout_height="@dimen/menu_frame"
+        android:contentDescription="@string/cd_window"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_window_frame"
+        app:layout_constraintBottom_toTopOf="@+id/guide_sheet_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageView
+        android:id="@+id/img_menu_flower"
+        android:layout_width="@dimen/menu_flower"
+        android:layout_height="@dimen/menu_flower"
+        android:contentDescription="@string/cd_flower"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_jelly_flower"
+        app:layout_constraintBottom_toBottomOf="@+id/img_menu_frame"
+        app:layout_constraintEnd_toEndOf="@+id/img_menu_frame"
+        app:layout_constraintStart_toStartOf="@+id/img_menu_frame"
+        app:layout_constraintTop_toTopOf="@+id/img_menu_frame" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_sheet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius_lg"
+        app:cardElevation="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guide_sheet_top"
+        app:strokeColor="@color/sheet_stroke"
+        app:strokeWidth="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/space_lg"
+            android:paddingTop="@dimen/space_md"
+            android:paddingEnd="@dimen/space_lg">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/menu_scroll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fillViewport="true"
+                app:layout_constraintBottom_toTopOf="@+id/menu_cta_block"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="@dimen/grab_pill_w"
+                        android:layout_height="@dimen/grab_pill_h"
+                        android:background="@drawable/bg_grab_pill"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:id="@+id/txt_menu_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_md"
+                        android:text="@string/menu_title"
+                        android:textAppearance="@style/TextAppearance.App.Title"
+                        android:textColor="@color/ink" />
+
+                    <TextView
+                        android:id="@+id/txt_menu_tagline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:text="@string/menu_tagline"
+                        android:textAppearance="@style/TextAppearance.App.Label"
+                        android:textColor="@color/ink_muted" />
+
+                    <View
+                        android:layout_width="120dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="@dimen/space_md"
+                        android:background="@drawable/divider_dots"
+                        android:importantForAccessibility="no"
+                        android:layerType="software" />
+
+                    <LinearLayout
+                        android:id="@+id/menu_stats_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_md"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <com.SkQmTzV.nJxLpR.core.ui.StatCardView
+                            android:id="@+id/stat_one"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <com.SkQmTzV.nJxLpR.core.ui.StatCardView
+                            android:id="@+id/stat_two"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_sm"
+                            android:layout_weight="1" />
+
+                        <com.SkQmTzV.nJxLpR.core.ui.StatCardView
+                            android:id="@+id/stat_three"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_sm"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:id="@+id/menu_cta_block"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/nav_bar_pad"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_menu_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_sm"
+                    android:gravity="center"
+                    android:letterSpacing="0.14"
+                    android:text="@string/menu_hint"
+                    android:textAppearance="@style/TextAppearance.App.Caption"
+                    android:textColor="@color/ink_faint" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_play"
+                    style="@style/Widget.App.Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_primary_h"
+                    android:text="@string/menu_cta_play"
+                    app:icon="@drawable/ic_play" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_patterns"
+                        style="@style/Widget.App.Button.Secondary"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/btn_secondary_h"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/space_xxs"
+                        android:paddingEnd="@dimen/space_xxs"
+                        android:text="@string/menu_btn_patterns" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_tutorial"
+                        style="@style/Widget.App.Button.Secondary"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/btn_secondary_h"
+                        android:layout_marginStart="@dimen/space_sm"
+                        android:layout_weight="1.3"
+                        android:paddingStart="@dimen/space_xxs"
+                        android:paddingEnd="@dimen/space_xxs"
+                        android:text="@string/menu_btn_tutorial" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_settings"
+                        style="@style/Widget.App.Button.Secondary"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/btn_secondary_h"
+                        android:layout_marginStart="@dimen/space_sm"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/space_xxs"
+                        android:paddingEnd="@dimen/space_xxs"
+                        android:text="@string/menu_btn_settings" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SweetJelly" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/jelly_pink</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/jelly_pink_deep</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorSecondary">@color/jelly_lemon</item>
+        <item name="colorOnSecondary">@color/ink</item>
+        <item name="colorTertiary">@color/jelly_mint</item>
+        <item name="colorOnTertiary">@color/ink</item>
+        <item name="android:colorBackground">@color/grape_900</item>
+        <item name="colorSurface">@color/grape_800</item>
+        <item name="colorOnSurface">@color/cream_50</item>
+        <item name="colorSurfaceVariant">@color/grape_700</item>
+        <item name="colorOnSurfaceVariant">@color/lilac_200</item>
+        <item name="colorOutline">@color/secondary_stroke</item>
+        <item name="android:windowBackground">@drawable/bg_launch_window</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Primary</item>
+    </style>
+</resources>

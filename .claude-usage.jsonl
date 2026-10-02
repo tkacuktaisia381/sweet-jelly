@@ -1,0 +1,5 @@
+{"type":"call","ts":1790932618,"task":"approve-kotlin","model":"opus","model_id":"claude-opus-5"}
+{"type":"call","ts":1790938090,"task":"heal-build","model":"opus","model_id":"claude-opus-5"}
+{"type":"call","ts":1790939825,"task":"validate-screenshots","model":"haiku","model_id":"claude-haiku-4-5"}
+{"type":"call","ts":1790939861,"task":"heal-build","model":"opus","model_id":"claude-opus-5"}
+{"type":"call","ts":1790940867,"task":"validate-screenshots","model":"haiku","model_id":"claude-haiku-4-5"}
